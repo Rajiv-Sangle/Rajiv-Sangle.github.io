@@ -1,0 +1,241 @@
+{
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "bibliography.bib",
+      "bytes": 25417,
+      "sha256": "e8710a668e92d7097b19a9dd4a331f1d0d92d7f1e2aa28eb041ac928446dcc30"
+    },
+    {
+      "path": "citations.js",
+      "bytes": 8708,
+      "sha256": "dbf69019485afd650e2a04f1f81e88d82c08059df3651c30dcdd584eeca6686c"
+    },
+    {
+      "path": "data/7m6a_ca.pdb",
+      "bytes": 1533792,
+      "sha256": "31e14486d2fd38488cc1ea821b8cbbe7baf73d17b72ee781566b9de470418120"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_exonic_v0.5.3.fa",
+      "bytes": 15569,
+      "sha256": "a8ba6de8abe868149d682c7ce385ccd45c8266b290f5ae95065e14dec88df13c"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_genomic_v0.5.3.fa",
+      "bytes": 153963,
+      "sha256": "92a30d5b0f0ca5cd954bed28c0ceb11e28d998dad37c35f0aebd7315e2cf90c8"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_header_v0.5.3.json",
+      "bytes": 248225,
+      "sha256": "36eeec7f25046fd7046df29b07607c048384935aaa2a7552ee855bf14f705ac4"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_highlights_v0.5.3.tsv",
+      "bytes": 2502,
+      "sha256": "81b5491ae24d721de699df5ad31d33174cade64280ff86d7091d347e77d32107"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_protein_v0.5.3.fa",
+      "bytes": 5189,
+      "sha256": "fb2fe200ab2c4708fda782bd02057cd64500a002e45fbf4a0723b71ab80b9880"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/exon_map_v0.5.3.tsv",
+      "bytes": 7821,
+      "sha256": "dd51a4d4d26864b0881b655d74408ced1141b546f7ab5b812270bed7adc5ae77"
+    },
+    {
+      "path": "data/exon_map_v0.5.3/manifest.json",
+      "bytes": 50816,
+      "sha256": "a95ac5d150bb4d0626471eec22d936394932aa0b09f97c5b96c08b97a90edd5a"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_clinvar_614.tsv",
+      "bytes": 803,
+      "sha256": "72f7384f3e2d82824c3469f81ff54d6c221eba2585bdd61a6fbee0cef7f60c3f"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_clinvar_conditions_614.tsv",
+      "bytes": 1867,
+      "sha256": "ae04fea9760172e0108671f779f83dc56afd34e96c0b2502de77ea0ad8c2ab76"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_gnomad_614.tsv",
+      "bytes": 1589,
+      "sha256": "e005ef24238191df62f84fb4b34958058a28301f27ed99a053956bbb59d9aef0"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_partners_614.tsv",
+      "bytes": 757,
+      "sha256": "ae6d8577fd21ef5a6527fbc88cde463177655f7cb035140a3014c3c5ee2e07a8"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_set_614.tsv",
+      "bytes": 234,
+      "sha256": "6582beda1b8bdc415129fa14bcf93adf0ce70a7bb0d5387d53d2a72e733f883f"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/cl4_structures_614.tsv",
+      "bytes": 47453,
+      "sha256": "7d3558637b0f61fe92815a4383c065bafa91c2697154fc0e5f7fd13bc83e8aca"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/manifest.json",
+      "bytes": 4905,
+      "sha256": "4d030597bef8fd2833f8c1c5916a282382fc449f4924075e1bce3f2fd89db4ff"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/records_614.jsonl",
+      "bytes": 297718,
+      "sha256": "bfdbb69fffcb7ab59756ae556819d35fe4a4d759dd03fc5711d1801f1f27aa44"
+    },
+    {
+      "path": "data/ryr1_composition_v0.1_614/withheld.tsv",
+      "bytes": 23240,
+      "sha256": "6d09039e90329fa7a4a135dddd0114a1a4247630be4e620f4f6b6eacc125ec6f"
+    },
+    {
+      "path": "data/ryr1_uniprot_features_v0.1/ryr1_uniprot_features_v0.1.tsv",
+      "bytes": 4836,
+      "sha256": "f2c51a40d7d37b565fb968a332dfb74dc53dcd5fabf67e5392a6dd1470f81d93"
+    },
+    {
+      "path": "figure_expand.js",
+      "bytes": 10723,
+      "sha256": "e19acae44469e9d9abb470005f2f30b27b551b7d76ebf9be25868d0266d9705b"
+    },
+    {
+      "path": "figure_jump.js",
+      "bytes": 8792,
+      "sha256": "e652b1361899f4db1015f13fabd1c48dfaccf283fe34f550128d133597129e30"
+    },
+    {
+      "path": "figures/emhg_list.js",
+      "bytes": 12258,
+      "sha256": "028708e83dcc07bb9b55fca3fb865493161ae875f7660c4a9467bb3564957b32"
+    },
+    {
+      "path": "figures/exon_arithmetic.js",
+      "bytes": 20462,
+      "sha256": "4802a7b59e7a2ff4210d54263db6d53c756cf05e71ebbd6e30e2766baf0bfd05"
+    },
+    {
+      "path": "figures/exons.js",
+      "bytes": 124384,
+      "sha256": "e93b1a2ee3318ea79b8f567a125098f4defd1ff298b739d2b167a1f8dc0090cc"
+    },
+    {
+      "path": "figures/ingredients.js",
+      "bytes": 8059,
+      "sha256": "c89f007d2e93334565846d565590491c4964365737a7d516a517e00e75b8821b"
+    },
+    {
+      "path": "figures/kinds.js",
+      "bytes": 33142,
+      "sha256": "8e1894c74c93ff32856cb8b7a5f488ac597860e8a830e2ea445f13b79543fe98"
+    },
+    {
+      "path": "figures/notes.js",
+      "bytes": 12487,
+      "sha256": "b7b8c5da4ccf0f25dc20a1dcdfda1c9475a7e024246a82fdca35aed2c3ef451b"
+    },
+    {
+      "path": "figures/parts.js",
+      "bytes": 10129,
+      "sha256": "eb8a13cffdd3bba2889a15141442d29bab718425abdb052b4adac37e25f09a2e"
+    },
+    {
+      "path": "figures/residue_assembly.js",
+      "bytes": 63099,
+      "sha256": "0d9171c42721a8755231e78b83e587728603f52631935785717a01f618c9f529"
+    },
+    {
+      "path": "figures/ryr1_schematic.js",
+      "bytes": 14271,
+      "sha256": "15da0e3b80a91eaa7d5ba01052cfea8534a92f86f272fd69ad9e28434515c03a"
+    },
+    {
+      "path": "figures/states.js",
+      "bytes": 5193,
+      "sha256": "f9ea48256c4b519613e834086e0cddab31aee2104cf02ff20160cf53476b9295"
+    },
+    {
+      "path": "figures/structure.js",
+      "bytes": 4162,
+      "sha256": "e64caa94f1de4d89a7231f9beee4a3cade72cf6d37586fca30ed378d5251500e"
+    },
+    {
+      "path": "figures/uniprot_map.js",
+      "bytes": 33644,
+      "sha256": "b0d324386a36a3ccce13fedefa0a1e539466b111075e962107864a4c81842592"
+    },
+    {
+      "path": "figures/variant_arithmetic.js",
+      "bytes": 29725,
+      "sha256": "d14480edf4f999f3bcbc710687b52a7e9443e6f0762d1006aa0f0f85cbb7e432"
+    },
+    {
+      "path": "index.html",
+      "bytes": 228457,
+      "sha256": "38e8d0a88bbe75dbbc46983eeed427815e4c02d79ee63f7a681d1149bf00223f"
+    },
+    {
+      "path": "LICENSE-code.txt",
+      "bytes": 1069,
+      "sha256": "ecc3b6e4d749881a060850a975e21c88e271d444e7a4f64acab3ca76bbc3bb39"
+    },
+    {
+      "path": "site.js",
+      "bytes": 6078,
+      "sha256": "a8a3aea4aed0be75b433ca8d390255e2cd8c658bba13e7231cb1200551ba7c04"
+    },
+    {
+      "path": "style.css",
+      "bytes": 83215,
+      "sha256": "30ce2249010aa7d6d65f55f315d636766b06b86ce03571909b24d49880d1be56"
+    },
+    {
+      "path": "vendor/3dmol/3Dmol-min.js",
+      "bytes": 537792,
+      "sha256": "f7cc78921ae72e7623e89cdd111434f58c2efddd2ffda1cd212644b406fb8016"
+    },
+    {
+      "path": "vendor/3dmol/LICENSE",
+      "bytes": 4283,
+      "sha256": "4c6eaaed856f3f28a3b1a98e74f4a8a71618de7d51ea4155c29f6f793bcef861"
+    },
+    {
+      "path": "vendor/d3/d3.min.js",
+      "bytes": 279706,
+      "sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539"
+    },
+    {
+      "path": "vendor/d3/LICENSE",
+      "bytes": 731,
+      "sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4"
+    },
+    {
+      "path": "vendor/distill/AUTHORS",
+      "bytes": 308,
+      "sha256": "75e4f15efb8f1946a64f674f01041ac0cdcab35357c903831b9ab20aeb7cf654"
+    },
+    {
+      "path": "vendor/distill/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "vendor/distill/template.v2.js",
+      "bytes": 296420,
+      "sha256": "ee2d3adb9eb070430f93052c77bd31161230d21ea66194309d51903fd01cdfb1"
+    }
+  ],
+  "file_count": 47,
+  "total_bytes": 4275351
+}

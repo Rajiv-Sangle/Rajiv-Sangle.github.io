@@ -1,0 +1,53 @@
+# provisional: no
+# release: ryr1_uniprot_features_v0.1
+# entry: P21817
+# entry_version: 256
+# last_annotation_update: 2026-09-02
+# sequence_version: 3
+# numbering: P21817-1, UniProt's canonical sequence
+# length: 5038
+# retrieved: 2026-09-29
+# retrieval: cs:retrieval.VPdG0C8dOG0RdRCDH3o7hwF0-y22z2qQ
+# entry_file_sha256: 1af73b671497038c47015589030e2caa31858e1619e25ec56f4d6951a888e17e
+# uniprot_release: 2026_03
+# current_entry: byte-identical to the held entry on 2026-10-11 (UniProt release 2026_03): entry version 256 was still current
+# licence: UniProt's annotations, under UniProt's licence, CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), adapted
+# credit: Annotations: UniProt, entry P21817, version 256, read on 29 September 2026; CC BY 4.0; adapted
+# citation: The UniProt Consortium. UniProt: the Universal Protein Knowledgebase in 2025. Nucleic Acids Res. 53:D609–D617 (2025). https://doi.org/10.1093/nar/gkae1010
+# withheld: 27 of the entry's features are withheld: its 9 Domain rows, which rest on PROSITE's rules, and 18 rows that record the output of the predictor MobiDB-lite (8 Region rows, 10 Compositional bias rows)
+# excluded: Chain (1), Natural variant (204), Modified residue (8), Mutagenesis (3), Sequence conflict (4), Alternative sequence (2), Helix (3), Turn (1), Beta strand (1)
+# columns: type: UniProt's feature type | start: first residue, P21817-1 numbering | end: last residue, P21817-1 numbering (one residue: start equals end) | description: UniProt's description, verbatim (empty for every binding site) | evidence: UniProt's evidence code (ECO); empty where the entry gives none | evidence_label: the heading UniProt's help page gives that code, for display | evidence_source: the evidence's source, as source:identifier (UniProt's flat-file form, as in UniProtKB:P11716); empty where the entry gives none | ligand: a binding site's ligand, UniProt's name | ligand_id: the ligand's identifier, as the entry gives it (ChEBI)
+# header_file: ryr1_uniprot_features_header_v0.1.json
+type	start	end	description	evidence	evidence_label	evidence_source	ligand	ligand_id
+Topological domain	1	4559	Cytoplasmic	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4560	4580	Helical; Name=1	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4581	4641	Lumenal	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4642	4662	Helical; Name=2	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4663	4780	Cytoplasmic	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4781	4803	Helical; Name=3	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4804	4804	Lumenal	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4805	4821	Helical; Name=4	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4822	4836	Cytoplasmic	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4837	4857	Helical; Name=5	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4858	4880	Lumenal	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Intramembrane	4881	4900	Pore-forming	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4901	4920	Lumenal	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Transmembrane	4921	4941	Helical; Name=6	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Topological domain	4942	5038	Cytoplasmic	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Repeat	841	954	1					
+Repeat	955	1068	2					
+Repeat	1344	1359	3; truncated					
+Repeat	1372	1387	4; truncated					
+Repeat	2726	2845	5					
+Repeat	2846	2959	6					
+Region	669	680	Interaction with FKBP1A	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Region	841	2959	6 X approximate repeats					
+Region	3614	3643	Interaction with CALM	ECO:0000269	Experimental evidence	PubMed:18650434		
+Motif	4895	4901	Selectivity filter	ECO:0000250	Sequence similarity evidence	UniProtKB:P11716		
+Binding site	3892	3892		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	Ca(2+)	ChEBI:CHEBI:29108
+Binding site	3966	3966		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	Ca(2+)	ChEBI:CHEBI:29108
+Binding site	4210	4214		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	ATP	ChEBI:CHEBI:30616
+Binding site	4717	4717		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	caffeine	ChEBI:CHEBI:27732
+Binding site	4955	4960		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	ATP	ChEBI:CHEBI:30616
+Binding site	4980	4986		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	ATP	ChEBI:CHEBI:30616
+Binding site	5002	5002		ECO:0000250	Sequence similarity evidence	UniProtKB:P11716	Ca(2+)	ChEBI:CHEBI:29108

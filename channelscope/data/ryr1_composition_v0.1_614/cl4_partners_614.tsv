@@ -1,0 +1,4 @@
+human_position	species	partner_numbering	correspondence	partner_position	partner_residue	reliability	reliability_reasons	ambiguous	mapping_column	mapping_table	c7_blind_plus1	c7_blind_minus1	partner_numbering_record	a6_entries	a6_record
+614	Oryctolagus cuniculus	numbering:P11716.sv1	pair	615	R	standard		false	615	cs:table.5URsZZtyhn3vUFBvDH0dg0YxVwduVhjo	false	false	cs:numbering.y9heVhYNcbvHgB8QdRIVWiziSbXW0eOa		
+614	Mus musculus	numbering:E9PZQ0.sv1	pair	616	R	standard		false	616	cs:table.9708f3rPzqExweM8kfbZH1egpdG4nNKI	false	false	cs:numbering._Q5Z6arpFIGP5_LZ3XH9Zj9b7KYKca_f		
+614	Sus scrofa	numbering:P16960.sv2	pair	615	R	standard		false	615	cs:table.nt5DASs63Krm6eTtUVxT7Q3GgKRa_nFu	false	false	cs:numbering.FXFSHHIraVyHQUctjygCVHg_sel5gyar		

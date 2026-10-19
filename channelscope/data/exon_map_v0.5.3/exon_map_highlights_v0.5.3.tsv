@@ -1,0 +1,24 @@
+label	genome_pos	exon_number	intron_number	region	c_hgvs	c_pos	codon_number	codon_position	residue_number	genome_base	ref_codon	ref_codon_partial	ref_base_states	ref_aa	alt_codon	alt_aa	split_codon	data_absent_reason	source
+untranslated	38433691	1		5utr	c.-139					G								not-applicable	codon map
+flanking codon	38443793	5		cds	c.421	421	141	1	141	A	ACA	ACA	rrr	T			false		codon map
+flanking codon	38443794	5		cds	c.422	422	141	2	141	C	ACA	ACA	rrr	T			false		codon map
+flanking codon	38443795	5		cds	c.423	423	141	3	141	A	ACA	ACA	rrr	T			false		codon map
+split codon	38443796	5		cds	c.424	424	142	1	142	G	GGA	GGA	rrr	G			true		codon map
+intronic (derived)	38443797		5	intron	c.424+1					G								not-applicable	derived from exon bounds (HGVS +1 rule); base read from GRCh38 (NC_000019.10)
+intronic (derived)	38444148		5	intron	c.425-1					G								not-applicable	derived from exon bounds (HGVS -1 rule); base read from GRCh38 (NC_000019.10)
+split codon	38444149	6		cds	c.425	425	142	2	142	G	GGA	GGA	rrr	G			true		codon map
+split codon	38444150	6		cds	c.426	426	142	3	142	A	GGA	GGA	rrr	G			true		codon map
+flanking codon	38444151	6		cds	c.427	427	143	1	143	G	GAG	GAG	rrr	E			false		codon map
+flanking codon	38444152	6		cds	c.428	428	143	2	143	A	GAG	GAG	rrr	E			false		codon map
+flanking codon	38444153	6		cds	c.429	429	143	3	143	G	GAG	GAG	rrr	E			false		codon map
+flanking codon	38457542	17		cds	c.1837	1837	613	1	613	G	GTA	GTA	rrr	V			false		codon map
+flanking codon	38457543	17		cds	c.1838	1838	613	2	613	T	GTA	GTA	rrr	V			false		codon map
+flanking codon	38457544	17		cds	c.1839	1839	613	3	613	A	GTA	GTA	rrr	V			false		codon map
+variant	38457545	17		cds	c.1840	1840	614	1	614	C	CGC	CGC	rrr	R	TGC	C	false		ClinVar VCV000012964.91; codon map
+variant codon	38457546	17		cds	c.1841	1841	614	2	614	G	CGC	CGC	rrr	R	TGC	C	false		codon map
+variant codon	38457547	17		cds	c.1842	1842	614	3	614	C	CGC	CGC	rrr	R	TGC	C	false		codon map
+flanking codon	38457548	17		cds	c.1843	1843	615	1	615	T	TCC	TCC	rrr	S			false		codon map
+flanking codon	38457549	17		cds	c.1844	1844	615	2	615	C	TCC	TCC	rrr	S			false		codon map
+flanking codon	38457550	17		cds	c.1845	1845	615	3	615	C	TCC	TCC	rrr	S			false		codon map
+intronic (derived)	38457631		17	intron	c.1925+1					G								not-applicable	derived from exon bounds (HGVS +1 rule); base read from GRCh38 (NC_000019.10)
+intronic (derived)	38458050		17	intron	c.1926-1					G								not-applicable	derived from exon bounds (HGVS -1 rule); base read from GRCh38 (NC_000019.10)

@@ -1,0 +1,17 @@
+human_position	accession_version	condition_index	condition_name	mondo_id	mondo_given	clinvar_retrieval
+614	VCV000133108.25	1	Malignant hyperthermia, susceptibility to, 1	MONDO:0007783	true	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	2	desflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	3	succinylcholine response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	4	sevoflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	5	methoxyflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	6	isoflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	7	halothane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000133108.25	8	enflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	1	Malignant hyperthermia, susceptibility to, 1	MONDO:0007783	true	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	2	desflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	3	succinylcholine response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	4	sevoflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	5	methoxyflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	6	isoflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	7	halothane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR
+614	VCV000012964.91	8	enflurane response - Toxicity		false	cs:retrieval.m3LSpuTeDIuCl6DQZhO0yCz9CU2PxUZR

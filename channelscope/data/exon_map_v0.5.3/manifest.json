@@ -1,0 +1,1053 @@
+{
+  "release": "exon_map_v0.5.3",
+  "version": "0.5.3",
+  "supersedes": "exon_map_v0.5.2",
+  "licence": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "covers": "as the header's licence block says"
+  },
+  "built_at": "2026-10-15T12:22:45.432Z",
+  "built_by": "agent:lumen",
+  "built_from": {
+    "release": "exon_map_v0.5.2",
+    "manifest_sha256": "sha256:d4c27bc9aa3fce46daa77b76da7ddf610e721b4aedde26d547eeebd95066c061",
+    "note": "exon_map_v0.5.2's eight files, each checked against its manifest (check T0), and that manifest, whose SHA-256 the builder pins. No earlier builder was run again."
+  },
+  "builder": {
+    "reissue": {
+      "file": "build_exon_view_v0_5_3.js",
+      "sha256_lf": "sha256:b0806fac0eb01d32d82966ed0782c52354666a8a6d03aac3fc84a7ef95768c97",
+      "runtime": "node v24.21.0",
+      "published": false
+    },
+    "reissue_v0_5_2": {
+      "file": "build_exon_view_v0_5_2.js",
+      "sha256_lf": "sha256:1eb48ebeee18b8a51935e2a496e0d932da44e4bd67381991a248b9130bf09777",
+      "runtime": "node v24.21.0",
+      "published": false
+    },
+    "reissue_v0_5_1": {
+      "file": "build_exon_view_v0_5_1.js",
+      "sha256_lf": "sha256:e4dd8737b60ea6f19fabb6ad830db17a8c35fe06ecfa5b00fdaf811261ec34fc",
+      "runtime": "node v24.21.0",
+      "published": false
+    },
+    "data_and_engine": {
+      "file": "build_exon_view.js",
+      "sha256_lf": "sha256:f5c48f39169558349b665d479e0ca97161a2ffa9747c0e7b91adcd05a2e26b3a",
+      "runtime": "node v24.21.0",
+      "published": false
+    }
+  },
+  "why": "exon_map_v0.5.2 could not be published: its header named the article by working names, and it reported the results of comparing the typed-variant engine's names with Mutalyzer's, whose terms of use have not been read. This reissue changes only texts, and what it carries, so that it can be: each change is declared below, and withheld.tsv lists what is not carried.",
+  "changes_from_previous": [
+    "Texts only, each declared below: six texts that named the article by working names; statements that were no longer true corrected; NHGRI's terms quoted, now read; the codon map table's published copy named; a list of the forms the typed-variant engine writes; and the comparison's results no longer reported.",
+    "Data: the exon table, highlights, c. names and the genomic, exonic and protein sequences are exon_map_v0.5.2's files byte for byte (check T1), under this release's names.",
+    "Carried no longer: the typed-variant test set, which holds Mutalyzer's names. withheld.tsv lists it with its SHA-256, and the header still cites it by case, under its own name, exon_map_variant_tests_v0.5.2.tsv.",
+    "Engine: the typed-variant engine's code is v0.5's builder's, not run again; its rules differ from exon_map_v0.5.2's only in three reworded notes on how a rule applies (typed_variants.rules[14], [18] and [41], applied)."
+  ],
+  "old_texts": "Each text this release replaces was found by its SHA-256, which the builder pins and checks. Neither the old texts nor their SHA-256 are published: some name this project's working collaborators or report the withheld comparison, and the SHA-256 of a short text can be confirmed by guessing the text. exon_map_v0.5.2's header, whose SHA-256 withheld.tsv gives, holds them all.",
+  "rewordings": [
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "literature_basis"
+      ],
+      "to": "Each paper was read in full from the snapshot named in read_from; the snapshots are not redistributed (see rights). Their sha256 are under the inputs of exon_map_v0.5's manifest, which this release does not carry; manifest.json gives that manifest's SHA-256 under v0_5_checks. Each quotation was checked against its snapshot by v0.5's verifier (check B26, carried under v0_5_checks).",
+      "why": "this release's manifest lists no paper snapshot, and its build does not run v0.5's verifier"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "what_this_is"
+      ],
+      "to": "The view files that the article's exon-map figure draws from. The exon rows are copied from ChannelScope evidence-graph records, and the highlights' coding values from the codon map table; the variant's position and change are ClinVar's, as retrieved. Three sequences are carried, each in its own FASTA file: the GRCh38 bases of the transcript's span, as read from NCBI; the exonic sequence; and P21817-1, as read from UniProt. The assembly's record is NCBI's, and the sources' terms are quoted from their pages. From v0.4: plain-language notes and highlight groups, every sentence with its source; HGVS's amino-acid table, and the rules a figure follows to name and class a typed change, quoted from HGVS Nomenclature 21.1.4 and the Sequence Ontology; ClinVar's classifications, quoted as ClinVar's; and two test sets, of HGVS c. names at chosen positions, in a file of its own, and of the consequences of chosen changes, which this release withholds (its README says why). New in v0.5: the typed-variant engine names an in-frame change that brings a stop after its first changed residue as HGVS does, and classes it stop_gained; its rules quote HGVS's protein forms that v0.4 computed without quoting, and settle the changes through the stop codon and the changes it refuses; and the test set holds 91 curated cases and 4 refused ones, with the engine's naming also checked on HGVS's own examples on their own transcripts. Worked out by the builder of exon_map_v0.5, whose data this release keeps, rather than copied: the counts under figures, from the 106 exon rows; the intronic highlights' positions, from the exon bounds by HGVS's +1 and -1 rule, with their bases read from the GRCh38 snapshot; the variant's alternate codon, which is the reference codon as read with ClinVar's alternate base put in, translated by the standard genetic code; the exonic sequence, which is the span's bases joined at the exon bounds, compared base for base with NCBI's and Ensembl's records of the transcript; the intronic c. names at the test positions; and every row of the typed-variant test set, compared with ClinVar's 379 expert-panel records, and with the answers of an independent implementation, whose results this release withholds. This reissue's checks, each with the faults planted to test it, and v0.5's 29 checks are listed in manifest.json. Check each file's sha256 against manifest.json before drawing.",
+      "why": "a working name for the article; the comparison's results; the test set withheld; v0.5's builder named"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "notes_basis"
+      ],
+      "to": "Plain-language notes on the four identifiers the exon-map figure names, and a fifth, 'not every exonic base codes', in the shape agreed for the article on 2026-10-03. Every sentence names its source: a page, by the URL that logged it, with link giving the page a reader opens where the URL is an API or a raw file; or the release, by file. The words a sentence rests on were found in that page as retrieved (check B18); they stay in ChannelScope's reading record. The date a page was read is its retrieval's, under provenance.",
+      "why": "a working name for the article"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "hgvs_names",
+        "note"
+      ],
+      "to": "ChannelScope's HGVS c. names at a test set of positions, so that a figure computing names for any position can be checked against ChannelScope's as well as its own. Exonic names are the codon map's; intronic names follow HGVS's rules, quoted below (check B20). A figure may compute names for any position on three conditions: the rule is HGVS's own, cited; this test set; and the article's check at every position.",
+      "why": "a working name for the article"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "conditions",
+        2
+      ],
+      "to": "The article's second implementation covers every coding substitution and a spread of insertions and deletions.",
+      "why": "a working name for the article"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "test_set",
+        "frameshift_ends"
+      ],
+      "to": "The article's two computed ends are cases d07 and d08: the new proteins end at residues 4,574 and 4,838.",
+      "why": "a working name for the article"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "caption",
+        "figure_number"
+      ],
+      "to": "(the article supplies)",
+      "why": "a working name for the article"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "note"
+      ],
+      "to": "What a figure needs to compute the consequence of a change a reader types. The test set to check it against is withheld from this release, as its README says. Nothing here is a release fact about any typed change.",
+      "why": "no longer true: the test set is not carried"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "conditions",
+        1
+      ],
+      "to": "ChannelScope keeps a test set of its computed consequences, with ClinVar's expert-panel variants as outside truth; this release withholds it, as its README says.",
+      "why": "no longer true: the test set is not carried"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "rules",
+        18,
+        "applied"
+      ],
+      "to": "Cases d16 and d28: deletions through the stop codon, which the engine names as frameshifts (naming_choices, through_stop).",
+      "why": "a note reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "rules",
+        41,
+        "applied"
+      ],
+      "to": "HGVS gives both forms for a change in a repeat of three-base units. The engine writes the duplication (case d25).",
+      "why": "a note reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "test_set",
+        "columns",
+        "agreement"
+      ],
+      "to": "how ChannelScope's values compare with the outside ones",
+      "why": "a column note reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "sources",
+        7,
+        "retrievals",
+        71,
+        "read_by_this_build"
+      ],
+      "to": "B29: a refused range, as sent",
+      "why": "a label reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "sources",
+        7,
+        "retrievals",
+        76,
+        "read_by_this_build"
+      ],
+      "to": "B29: a refused range, as sent",
+      "why": "a label reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "rules",
+        14,
+        "applied"
+      ],
+      "to": "HGVS's syntax file calls the number \"The number of amino acids added beyond the original Ter\". The two texts leave open whether the count starts at the old stop's codon or the next one. ChannelScope counts from the codon after the old stop: c.15115T>C gives p.(Ter5039ArgextTer21), with the new stop at codon 5060 (case s06).",
+      "why": "a note reworded for this release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "highlight_groups",
+        "groups",
+        0,
+        "gaps",
+        1,
+        "text"
+      ],
+      "to": "This release says nothing about what the change does to the channel's structure or function; that needs, among other evidence, the human-to-rabbit residue mapping, which ChannelScope's release ryr1_mappings_v0.1 carries.",
+      "why": "no longer true: the mapping is in a release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "licence",
+        "covers"
+      ],
+      "to": "The data and documents of this release in which ChannelScope holds rights. The sources' parts stay under their own terms, quoted under terms, and the papers' quotations stay their authors' and publishers'. Code is not covered: this release's builders are not published, and ChannelScope's published code is under the MIT licence.",
+      "why": "no longer true: the code's licence is chosen"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "scope_and_limits",
+        0
+      ],
+      "to": "This release carries the genome leg only: GRCh38 to transcript to codon to residue. It does NOT carry the human-to-rabbit residue mapping, which ChannelScope's release ryr1_mappings_v0.1 carries.",
+      "why": "no longer true: the mapping is in a release"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "scope_and_limits",
+        6
+      ],
+      "to": "This release holds no data for a figure of the human-to-rabbit mapping; that mapping is in ChannelScope's release ryr1_mappings_v0.1.",
+      "why": "no longer true: the mapping has data"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "scope_and_limits",
+        7
+      ],
+      "to": "This view release serves the article's exon-map figure only. ChannelScope's other releases, published beside it, carry the residue mappings (ryr1_mappings_v0.1), the structures' measured states (ryr1_structure_states_v0.1) and the evidence composed for a residue set (ryr1_composition_v0.1).",
+      "why": "no longer true: ChannelScope's first releases are made"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "terms",
+        "note"
+      ],
+      "to": "The terms of the sources whose data, words or records this release carries or compares with, quoted from their pages as retrieved (v0.5's check B17 found each quotation there, and this release's check T8 finds NHGRI's). Each applies to the parts named. Sources whose terms have not been read are listed under not_read, and nothing is said about their terms. Quotations from papers remain their authors' and publishers' words, quoted for citation.",
+      "why": "NHGRI's quotation is checked by T8, not B17"
+    }
+  ],
+  "removals": [
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "under": [
+        "typed_variants",
+        "test_set",
+        "outside_checks"
+      ],
+      "removed": "one entry: the comparison's results"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "under": [
+        "typed_variants"
+      ],
+      "removed": "one entry, withheld (the README says what is withheld and why)"
+    }
+  ],
+  "additions": [
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "naming_choices"
+      ],
+      "what": "the engine's naming choices, each with the form it writes and its basis"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "typed_variants",
+        "naming_choices_note"
+      ],
+      "what": "what naming_choices is"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "terms",
+        "sources",
+        8
+      ],
+      "what": "NHGRI's terms, quoted from its copyright policy as held"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "sources",
+        10,
+        "retrievals",
+        1
+      ],
+      "what": "the retrieval of NHGRI's copyright policy"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "codon_map_table",
+        "published_in"
+      ],
+      "what": "where the codon map table is published"
+    }
+  ],
+  "replacements": [
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "terms",
+        "not_read"
+      ],
+      "what": "NHGRI's entry out, its terms now read; Mutalyzer's note reworded: none of its answers carried, the results and the test set withheld"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "terms",
+        "sources",
+        5,
+        "applies_to"
+      ],
+      "what": "ClinVar's terms: the withheld test set out of the parts they apply to"
+    }
+  ],
+  "values_withheld": [
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "sources",
+        7,
+        "retrievals",
+        "*",
+        "bytes"
+      ],
+      "count": 77,
+      "now": null,
+      "why": "the sizes of Mutalyzer's answers, which would disclose part of the withheld comparison; each request's address, time and the SHA-256 of its answer are published"
+    },
+    {
+      "file": "exon_map_header_v0.5.3.json",
+      "at": [
+        "provenance",
+        "sources",
+        7,
+        "retrievals",
+        "*",
+        "http_status"
+      ],
+      "count": 77,
+      "now": null,
+      "why": "the HTTP statuses of Mutalyzer's answers, withheld with the sizes; each request's address, time and the SHA-256 of its answer are published"
+    }
+  ],
+  "identity_changes": [
+    {
+      "at": [
+        "release",
+        "name"
+      ],
+      "to": "exon_map_v0.5.3"
+    },
+    {
+      "at": [
+        "release",
+        "version"
+      ],
+      "to": "0.5.3"
+    },
+    {
+      "at": [
+        "release",
+        "supersedes"
+      ],
+      "to": "exon_map_v0.5.2"
+    },
+    {
+      "at": [
+        "licence",
+        "credit"
+      ],
+      "to": "ChannelScope, release exon_map_v0.5.3"
+    },
+    {
+      "at": [
+        "scope_and_limits",
+        1
+      ],
+      "to": "It changes from exon_map_v0.5.2 only texts, and what it carries, so that it can be published. Six texts that named the article by working names now name the article. The results of comparing the typed-variant engine's names with an independent implementation's are withheld, since that implementation's terms of use have not been read, and so is the typed-variant test set, which holds its names; the header still cites the test set by case. NHGRI's terms are quoted, now that they have been read. Statements that were no longer true are corrected: the human-to-rabbit mapping is in a release, and the code's licence is chosen. Its engine, test cases and data are v0.5.1's, byte for byte, and so v0.5's but for case s01's description, which v0.5.1 changed: the exon table, highlights, c. names and three sequence files are v0.5.1's files under this release's names, so the exonic and protein files' title lines still name exon_map_v0.5, whose build wrote them. manifest.json lists every change."
+    }
+  ],
+  "renamed_files": [
+    {
+      "from": "exon_map_c_names_v0.5.2.tsv",
+      "to": "exon_map_c_names_v0.5.3.tsv"
+    },
+    {
+      "from": "exon_map_exonic_v0.5.2.fa",
+      "to": "exon_map_exonic_v0.5.3.fa"
+    },
+    {
+      "from": "exon_map_genomic_v0.5.2.fa",
+      "to": "exon_map_genomic_v0.5.3.fa"
+    },
+    {
+      "from": "exon_map_header_v0.5.2.json",
+      "to": "exon_map_header_v0.5.3.json"
+    },
+    {
+      "from": "exon_map_highlights_v0.5.2.tsv",
+      "to": "exon_map_highlights_v0.5.3.tsv"
+    },
+    {
+      "from": "exon_map_protein_v0.5.2.fa",
+      "to": "exon_map_protein_v0.5.3.fa"
+    },
+    {
+      "from": "exon_map_v0.5.2.tsv",
+      "to": "exon_map_v0.5.3.tsv"
+    }
+  ],
+  "withheld": "withheld.tsv lists what this release does not carry: the typed-variant test set, the manifests and header this build read, the snapshot of a homepage the header describes, and the four builders.",
+  "rebuild_needs": [
+    "exon_map_v0.5.2's folder, unchanged (its manifest's SHA-256 is under built_from).",
+    "exon_map_v0.5's and exon_map_v0.5.1's manifests, NHGRI's copyright page and Mutalyzer's homepage as held, and ryr1_mappings_v0.1's codon map table (under inputs).",
+    "Node, to run the reissue builder, and the export's leak test with this project's private patterns (check T10), neither published."
+  ],
+  "inputs": [
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_c_names_v0.5.2.tsv",
+      "bytes": 45561,
+      "sha256": "sha256:e58d4ded7387e684a106000b8bc6a16357c692e8f0623b507c8ab2e2e87fa410"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_exonic_v0.5.2.fa",
+      "bytes": 15569,
+      "sha256": "sha256:a8ba6de8abe868149d682c7ce385ccd45c8266b290f5ae95065e14dec88df13c"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_genomic_v0.5.2.fa",
+      "bytes": 153963,
+      "sha256": "sha256:92a30d5b0f0ca5cd954bed28c0ceb11e28d998dad37c35f0aebd7315e2cf90c8"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_header_v0.5.2.json",
+      "bytes": 247375,
+      "sha256": "sha256:21d1333d48ee7d8c8a6152216ec96891f7cbcf405f9e13e4875aa4a0527e1877"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_highlights_v0.5.2.tsv",
+      "bytes": 2502,
+      "sha256": "sha256:81b5491ae24d721de699df5ad31d33174cade64280ff86d7091d347e77d32107"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_protein_v0.5.2.fa",
+      "bytes": 5189,
+      "sha256": "sha256:fb2fe200ab2c4708fda782bd02057cd64500a002e45fbf4a0723b71ab80b9880"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_v0.5.2.tsv",
+      "bytes": 7821,
+      "sha256": "sha256:dd51a4d4d26864b0881b655d74408ced1141b546f7ab5b812270bed7adc5ae77"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "exon_map_variant_tests_v0.5.2.tsv",
+      "bytes": 154717,
+      "sha256": "sha256:d2ce53e39d7be9bbd6d497f105acb4bd088183c3ec7957a39164d879024d3cc7"
+    },
+    {
+      "release": "exon_map_v0.5.2",
+      "file": "manifest.json",
+      "bytes": 16815,
+      "sha256": "sha256:d4c27bc9aa3fce46daa77b76da7ddf610e721b4aedde26d547eeebd95066c061"
+    },
+    {
+      "release": "exon_map_v0.5",
+      "file": "manifest.json",
+      "bytes": 84964,
+      "sha256": "sha256:bd7ea85b99a40e390ea8bc8624545c69402b05eebfbee32425e9d7391f095cb8"
+    },
+    {
+      "release": "exon_map_v0.5.1",
+      "file": "manifest.json",
+      "bytes": 12741,
+      "sha256": "sha256:bed743f44f506a0d4f35f58f070984253fc54b07f4b4f4ed8f20fa0598728305"
+    },
+    {
+      "retrieval": "cs:retrieval.OvbX8JHJYJU-8MFLZGGl7fZjBHjewysv",
+      "url": "https://www.genome.gov/about-nhgri/Policies-Guidance/Copyright",
+      "bytes": 198068,
+      "sha256": "sha256:81be3a965fdb6b41c8743608cc2edda755aacae744dd4fff3c5b61ae5935578b"
+    },
+    {
+      "retrieval": "cs:retrieval.aNTd_dADBOB97iEN48wr9n0-Bv6pJygA",
+      "url": "https://mutalyzer.nl/",
+      "bytes": 887,
+      "sha256": "sha256:23c9b8c37c95c29139d8af7db80f8a7713b40a3099f19355b7fca4064fa68df3"
+    },
+    {
+      "release": "ryr1_mappings_v0.1",
+      "file": "graph/tables/codon_map_NM_000540.3_GRCh38.tsv",
+      "bytes": 958307,
+      "sha256": "sha256:cae632faa2f50f3e02a8b7770aab1011761ce5433471f79ae1b32b6c00592115"
+    }
+  ],
+  "checks": [
+    {
+      "id": "T0",
+      "statement": "Each of exon_map_v0.5.2's files matches its manifest, and that manifest's SHA-256 is the one this builder pins.",
+      "fails_if": "Any SHA-256 or byte count differs, or the manifest is not the pinned one.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T1",
+      "statement": "The six data files are exon_map_v0.5.2's, byte for byte.",
+      "fails_if": "Any byte differs.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T2",
+      "statement": "The header differs from exon_map_v0.5.2's only at the declared places, once file names are mapped back; each declared place does differ; and each holds its declared value, or is absent where declared removed.",
+      "fails_if": "An undeclared difference, a declared change not made, or a declared place whose value is not the declared one.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T3",
+      "statement": "In the header, the manifest, the README and withheld.tsv, no string under a key named mutalyzer is anything but a case id, and no sentence outside a URL names Mutalyzer beside a c., g., n., p. or r. name.",
+      "fails_if": "Any match.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T4",
+      "statement": "No string in the header or the manifest, and no line of the README or withheld.tsv, names a figure by number.",
+      "fails_if": "Any match of 'Figure n', 'Fig. n' or 'figures n and m', in any case.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T5",
+      "statement": "The test set is not in the folder; withheld.tsv gives exon_map_v0.5.2's SHA-256 for it; every exon-map file the header names is in the folder or in withheld.tsv; and the codon map table's published copy has the table's SHA-256.",
+      "fails_if": "The test set present, a SHA-256 that differs, a file named in neither place, or a published copy that differs.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T6",
+      "statement": "No name Mutalyzer gave appears in the header, the manifest, the README or withheld.tsv, unless this release writes the same name itself.",
+      "fails_if": "Any such name found.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T7",
+      "statement": "The comparison's results are withheld: no key of the header names Mutalyzer but typed_variants.test_set.sets.curated_with_mutalyzer, a count of cases sent; no list in the header equals a list of the two removed entries; every answer's size and HTTP status under Mutalyzer's provenance is withheld; no text speaks of a declared difference but this build's statements of its checks and v0.5's B21, on ClinVar; no file holds the SHA-256 of a text this release replaces; and every string of the header and the manifest, and every line of the README and withheld.tsv, that names Mutalyzer outside a URL is one this build declares.",
+      "fails_if": "Any such key, list, size, phrase, SHA-256, string or line.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T8",
+      "statement": "NHGRI's terms entry has the shape the article's page reads; its SHA-256 is its retrieval record's and the held page's; each quotation, and the page's date, is found in the held page as plain text; and its provenance retrieval matches the record.",
+      "fails_if": "A field missing or empty, a SHA-256 or record field that differs, or a quotation or date not found.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T9",
+      "statement": "v0_5_checks.checks equals the 29 checks of exon_map_v0.5's manifest (id, statement, fails_if, outcome) but for the declared redactions, and v0_5_checks gives that manifest's SHA-256.",
+      "fails_if": "A check missing, added or changed outside a redaction, or a SHA-256 that differs.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T10",
+      "statement": "The export's leak test, with this project's private patterns, finds nothing in the folder at its export path, releases/exon_map_v0.5.3/, and its own control passes.",
+      "fails_if": "Any finding, or a failed control.",
+      "outcome": "pass"
+    },
+    {
+      "id": "T11",
+      "statement": "manifest.json lists every other file in the folder with its SHA-256 and byte count, and nothing else; checked again on disk after writing.",
+      "fails_if": "Any mismatch; a failure on disk removes the folder.",
+      "outcome": "pass"
+    }
+  ],
+  "controls": [
+    {
+      "check": "T0",
+      "fault": "a byte added to an exon_map_v0.5.2 file",
+      "outcome": "detected"
+    },
+    {
+      "check": "T0",
+      "fault": "a pin that is not exon_map_v0.5.2's manifest's",
+      "outcome": "detected"
+    },
+    {
+      "check": "T1",
+      "fault": "one byte of the exon table flipped",
+      "outcome": "detected"
+    },
+    {
+      "check": "T2",
+      "fault": "an undeclared header field added",
+      "outcome": "detected"
+    },
+    {
+      "check": "T2",
+      "fault": "a declared rewording not made",
+      "outcome": "detected"
+    },
+    {
+      "check": "T2",
+      "fault": "a declared rewording made with one word changed",
+      "outcome": "detected"
+    },
+    {
+      "check": "T3",
+      "fault": "a sentence naming Mutalyzer beside a protein name added to a note",
+      "outcome": "detected"
+    },
+    {
+      "check": "T3",
+      "fault": "the same sentence added to the README",
+      "outcome": "detected"
+    },
+    {
+      "check": "T3",
+      "fault": "a sentence naming Mutalyzer beside a protein name without parentheses added to a note",
+      "outcome": "detected"
+    },
+    {
+      "check": "T3",
+      "fault": "a Mutalyzer key restored with a name under it",
+      "outcome": "detected"
+    },
+    {
+      "check": "T4",
+      "fault": "a figure named by its number added to the README",
+      "outcome": "detected"
+    },
+    {
+      "check": "T5",
+      "fault": "the test set copied into the folder",
+      "outcome": "detected"
+    },
+    {
+      "check": "T5",
+      "fault": "a wrong SHA-256 for the test set in withheld.tsv",
+      "outcome": "detected"
+    },
+    {
+      "check": "T5",
+      "fault": "a header string naming a file in neither the folder nor withheld.tsv",
+      "outcome": "detected"
+    },
+    {
+      "check": "T5",
+      "fault": "a codon map copy that differs",
+      "outcome": "detected"
+    },
+    {
+      "check": "T6",
+      "fault": "a made-up name added to the README, and to the names T6 looks for, as if Mutalyzer had given it",
+      "outcome": "detected"
+    },
+    {
+      "check": "T6",
+      "fault": "the same added to the manifest",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a made-up sentence naming Mutalyzer added to a rule's note",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a removed entry restored in the header",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a removed list restored in the header",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a key naming the other implementation added to the header",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "one answer's size restored",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "one answer's HTTP status restored",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a line naming the other implementation added to the README",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a string naming the other implementation added to the manifest",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a row naming the other implementation added to withheld.tsv",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "a made-up sentence speaking of a declared difference added to a rule's note",
+      "outcome": "detected"
+    },
+    {
+      "check": "T7",
+      "fault": "the SHA-256 of a replaced text added to the manifest",
+      "outcome": "detected"
+    },
+    {
+      "check": "T8",
+      "fault": "one word of NHGRI's quotation changed",
+      "outcome": "detected"
+    },
+    {
+      "check": "T8",
+      "fault": "NHGRI's applies_to removed",
+      "outcome": "detected"
+    },
+    {
+      "check": "T8",
+      "fault": "NHGRI's SHA-256 changed",
+      "outcome": "detected"
+    },
+    {
+      "check": "T9",
+      "fault": "one of v0.5's checks dropped",
+      "outcome": "detected"
+    },
+    {
+      "check": "T9",
+      "fault": "one word of B1's statement changed",
+      "outcome": "detected"
+    },
+    {
+      "check": "T9",
+      "fault": "B22's statement restored to v0.5's",
+      "outcome": "detected"
+    },
+    {
+      "check": "T10",
+      "fault": "a peer's name left in one header string",
+      "outcome": "detected"
+    },
+    {
+      "check": "T10",
+      "fault": "a local path beside the NCBI address, on its line",
+      "outcome": "detected"
+    },
+    {
+      "check": "T10",
+      "fault": "a path glued onto the NCBI address",
+      "outcome": "detected"
+    },
+    {
+      "check": "T11",
+      "fault": "a file left out of the manifest's list",
+      "outcome": "detected"
+    },
+    {
+      "check": "T11",
+      "fault": "a newline added to a data file after its SHA-256 was taken",
+      "outcome": "detected"
+    }
+  ],
+  "v0_5_checks": {
+    "note": "Run by v0.5's build at 2026-10-03T16:26:13.842Z on the data and engine this release keeps byte for byte, but for case s01's description, which v0.5.1 changed. Carried from v0.5's manifest (id, statement, fails_if and outcome), with the redactions declared here.",
+    "count": 29,
+    "manifest_sha256": "sha256:bd7ea85b99a40e390ea8bc8624545c69402b05eebfbee32425e9d7391f095cb8",
+    "redactions": [
+      {
+        "id": "B22",
+        "field": "statement"
+      },
+      {
+        "id": "B22",
+        "field": "fails_if"
+      },
+      {
+        "id": "B22",
+        "field": "outcome"
+      },
+      {
+        "id": "B29",
+        "field": "statement"
+      }
+    ],
+    "checks": [
+      {
+        "id": "B1",
+        "statement": "The transcript and its locus are on the plus strand, so genome and c. positions rise together (the view contract's rule 0).",
+        "fails_if": "Either strand is anything but '+'.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B2",
+        "statement": "Every exon carries coding sequence.",
+        "fails_if": "An exon has no coding bases. The exon table has no data_absent_reason column, so such an exon could not be written correctly; the column is added when a gene needs it.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B3",
+        "statement": "Each highlighted codon is exactly three codon-map rows, at codon positions 1, 2 and 3, whose bases, read in order, spell the codon map's codon string.",
+        "fails_if": "A codon has other than three rows or positions, or its bases spell anything else.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B4",
+        "statement": "Each highlighted codon translates by the standard genetic code (NCBI table 1) to the codon map's amino acid and to the residue at the same number in UniProtKB P21817-1, read from the retrieved entry, whose sequence has the MD5 recorded for numbering P21817-1.sv3.",
+        "fails_if": "The MD5 differs, or any of the three residues disagree.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B5",
+        "statement": "The variant as ClinVar records it agrees with the codon map: the SPDI's sequence, position and reference base; the GRCh38 location; the title's transcript, gene, c. position and bases; and the protein change's reference residue and number. The alternate codon is the reference codon with the SPDI's alternate base in the variant's codon position, and it translates to ClinVar's alternate residue.",
+        "fails_if": "Any of these disagree.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B6",
+        "statement": "Each intronic highlight is outside every exon and inside the transcript's span; c.N+1 is one base after the codon-map base c.N, and c.M-1 one base before c.M; and the flanking exon ends, or starts, in coding sequence, so c.N or c.M names its last or first base.",
+        "fails_if": "A position falls inside an exon or outside the span, its neighbouring base is not c.N or c.M, or the flanking exon's end is untranslated.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B7",
+        "statement": "The NCBI and UCSC GRCh38 snapshots cover the same span of the same chromosome and agree at every base, and the NCBI snapshot agrees with the codon map at every exonic position.",
+        "fails_if": "The spans or chromosomes differ, or any base differs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B8",
+        "statement": "Every snapshot and table read has the sha256 its record states.",
+        "fails_if": "Any digest differs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B9",
+        "statement": "The figures agree with records they were not counted from: the exons' coding bases sum to the transcript record's CDS length, the exons number its exon count, and the CDS length over three, less the stop codon, is P21817-1's length.",
+        "fails_if": "Any of these disagree.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B10",
+        "statement": "The header's assembly record is NCBI's, and the GRC agrees. Asked which assemblies contain the locus's sequence accession, NCBI names exactly one, which becomes assembly_accession. Its dataset report gives it as current, from RefSeq, submitted by the Genome Reference Consortium, and gives assembly_name and assembly_paired_accession. The FTP assembly report and the accession's revision history give the same accession, name and pair, and no newer revision. The GRC's human page names the same release as its latest minor release, with the same GenBank accession. The genome snapshot's FASTA title names the same assembly. The name is the header's assembly or a patch release of it. In the assembly's sequence report and its FTP report, chromosome 19's assembled molecule is the locus's sequence accession, in the Primary Assembly.",
+        "fails_if": "NCBI names no assembly or several, or any of these names, accessions, statuses or rows disagree.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B11",
+        "statement": "Chromosome 19 is the same sequence in GRCh38 as first released as in the header's assembly: the revision history's entry named as the header's assembly (GRCh38 itself, before any patch) gives a RefSeq accession, and in that release's sequence report chromosome 19's assembled molecule has the same RefSeq and GenBank accession.versions, length and G+C count as in the header's assembly. UCSC's genome list names that release's GenBank accession as the source of hg38, the copy check B7 compares with NCBI's.",
+        "fails_if": "The first release is not in the history, its chromosome 19 differs in any of these, or UCSC names another source for hg38.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B12",
+        "statement": "No patch scaffold or alternate locus of the header's assembly lies in the transcript's span, by two lists read separately: the GRC's (the rows its human page labels with the assembly's name) and NCBI's placement file for the same release, in which a patch placed on an alternate-locus scaffold is traced to that scaffold's own place on the chromosome. Neither list is empty on chromosome 19, so its silence on the span is a reading, not an absence.",
+        "fails_if": "Either list places a patch or alternate locus overlapping the span, or either has no rows on chromosome 19.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B13",
+        "statement": "The genomic span file holds exactly the GRCh38 snapshot's bases from the first exon's first base to the last exon's last base, plus strand, as A, C, G and T only: the snapshot's range is the exon rows' span, and the file's sequence is the snapshot's, base for base, so check B7's comparison with UCSC holds for it.",
+        "fails_if": "The ranges differ, the lengths differ, any base differs, or a letter other than A, C, G or T occurs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B14",
+        "statement": "The exonic sequence is the genomic span's bases at the 106 exons' bounds, joined in exon order. It equals, base for base, the codon map's transcript bases by transcript position, NCBI's RefSeq record for the transcript, and Ensembl's cDNA for its MANE counterpart, each record named with the version the transcript record gives. Each exon begins one position after the lengths of the exons before it. Its coding region is NCBI's CDS range for the transcript, which the codon map puts at c.1 and at the last coding base, and the untranslated lengths agree with exons 1 and 106's coding bounds.",
+        "fails_if": "Any base, length, version, position or region disagrees.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B15",
+        "statement": "The exonic sequence's coding region, read three bases at a time from its first base and translated by the standard genetic code (NCBI table 1), gives P21817-1's residues in order and then a single stop codon: it begins ATG, has no stop before its last codon, and its last codon is the stop that the codon map gives at the transcript's last three coding bases, with no residue.",
+        "fails_if": "The region is not a whole number of codons, does not begin ATG, translates to anything other than P21817-1 followed by one stop, or its last codon differs from the codon map's.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B16",
+        "statement": "The protein file holds P21817-1 as UniProt's entry gives it, identical to NCBI's NP_000531.2 as retrieved, with the MD5 and refget digest of its numbering record, and NP_000531.2's numbering record has the same MD5.",
+        "fails_if": "Any residue, length or digest differs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B17",
+        "statement": "Every sentence the header quotes from a source's terms appears verbatim in that page as retrieved, once tags, entities, link markup and runs of white space are reduced to plain text. From v0.4, the licence's name is on Creative Commons' deed and legal code as retrieved.",
+        "fails_if": "Any quotation, or the licence's name, is not found in its snapshot.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B18",
+        "statement": "Every sentence of the plain-language notes names its source. A sentence from a page rests on words that are found in that page as retrieved, and a page that is markdown gives the line they are on; a sentence about the release's own data names the file. Words in quotation marks are found in the source as written.",
+        "fails_if": "A sentence has no source, or any of the words it rests on, or quotes, is not found in its snapshot.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B19",
+        "statement": "HGVS's amino-acid table is read from its standards page as retrieved, under the heading 'Amino Acid Descriptions'. Each one-letter code that the standard genetic code (NCBI table 1) produces has a row whose three-letter code is the one this builder names it by, and every codon the table lists for one of the twenty amino acids, or for termination, translates by table 1 to that row's letter.",
+        "fails_if": "A row is missing, a code differs, or a listed codon translates to another letter.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B20",
+        "statement": "The c. names at the test positions follow HGVS's numbering, whose rules are found in its numbering page as retrieved: an exonic name is the codon map's, and an intronic one is counted from the nearer exon, the central base of an intron with an odd number of bases from the upstream exon, with '+'. Every intron's first, last and middle bases, both ends of each untranslated region, every exon's first and last bases and the stop codon are named, and no position is named twice.",
+        "fails_if": "Any name differs from the rule or from the codon map, a rule's words are not found, or a position is missing or doubled.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B21",
+        "statement": "The typed-variant engine, run from each of ClinVar's 379 expert-panel RYR1 records' canonical SPDI, gives the record's own c. name wherever its title uses NM_000540.3 and a plain HGVS form, and the record's protein name wherever its title gives one. ClinVar's molecular consequence, found in SO by name or exact synonym, is the engine's class, or, for a splice donor or acceptor variant, the engine's intron_variant with the flag for that site. The one declared difference is ClinVar's title p.Glu331_Gly332insGlu, which HGVS writes as a duplication.",
+        "fails_if": "Any name or class disagrees in a way not declared, or a consequence term is not found in SO.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B22",
+        "statement": "The engine's names compared, case by case, with the answers of Mutalyzer, an independent implementation; and every HGVS rule the header quotes for typed changes found on its page as retrieved. exon_map_v0.5.3 withholds the rest of v0.5's statement, its failure condition and its outcome, until Mutalyzer's terms of use are read and allow them.",
+        "fails_if": "Withheld, with the outcome (see the statement).",
+        "outcome": "withheld"
+      },
+      {
+        "id": "B23",
+        "statement": "At every 25th coding position, each of the three possible substitutions gets the class and protein name that codon arithmetic gives: the reference codon read from the exonic sequence, the base replaced, and both codons translated by table 1.",
+        "fails_if": "Any class or name differs from the arithmetic.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B24",
+        "statement": "The splice-site flag follows SO's definitions, quoted from so.obo as retrieved: an intron's first two and last two bases are its five_prime_cis_splice_site (SO:0000163) and three_prime_cis_splice_site (SO:0000164), and splice_region (SO:0001902) is 'within 1-3 bases of the exon or 3-8 bases of the intron'. Every case in the test set whose flag was stated before the build gets that flag, at both edges of each zone, and c.958_960del raises both triggers, with c.958-2_958del among its equal placements. SO puts splice_region_variant (SO:0001630) under splicing_variant, 'A sequence variant that changes the process of splicing', and none of the three terms the flag names, which is why the flag names them.",
+        "fails_if": "A definition or relation is not as stated, or any case's flag differs from the one stated for it.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B25",
+        "statement": "The highlight groups divide the highlight rows exactly, each row in one group. Every value a group's sentences state about the release equals the release's, every ClinVar classification is ClinVar's as retrieved, with its review status, date and traits, and every case a group points to is in the test set.",
+        "fails_if": "A row is in no group or in two, or any stated value, classification or case differs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B26",
+        "statement": "Every quotation from a paper is, character for character, a quotation in the committed table that names the same paper and snapshot; the snapshot has the sha256 its manifest row gives; and the paper's verifier, run once per build, checks every quotation in that table against the snapshot itself and passes with nothing skipped.",
+        "fails_if": "A quotation is not in its table, a snapshot's sha256 differs, or a verifier fails or skips.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B27",
+        "statement": "The numbers in one_idea and in every note sentence about the release's own data equal the same numbers derived another way: the untranslated and coding lengths from the exon table and from the exonic sequence's regions; the transcript's length from the exon table and the sequence; and nine-tenths from figures.",
+        "fails_if": "Any number differs between the two derivations.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B28",
+        "statement": "HGVS's own protein examples that give a RefSeq transcript and a change on it are named as HGVS names them, by the engine's protein naming run on each transcript as NCBI holds it: c.1733_1735delinsTTT and c.1732_1794del on NM_080877.2, c.139delinsTCATCATGAGCTG and c.138_139insTCATCATGAGCTCCC on NM_004380.2, c.1676_1684del on NM_000222.3, and c.374_395inv on NM_003079.4. Each record's coding sequence translates to the record's own translation, and each example is quoted from HGVS's page as retrieved, with its line. Every curated case whose name or class rests on a rule new in v0.5 gets the name, class and residue numbers stated before the build.",
+        "fails_if": "Any example's name differs from HGVS's, a record's coding sequence does not translate to its own translation, a quotation is not found, or a stated case differs.",
+        "outcome": "pass"
+      },
+      {
+        "id": "B29",
+        "statement": "Every case stated before the build to be refused is refused, for the reason stated: a range written on NM_000540.3 alone whose ends lie in different exons, which the coding reference reads without the intron between them (HGVS, Numbering, line 40); an insertion written there between two such neighbours, which has no single place on the genome; and a change that HGVS's 3' rule carries to the last base of the genome this release carries, past which the rule cannot be followed. The same range given with the genomic reference is taken. The answer to each refused range that was fetched is recorded beside it, in the test set, which exon_map_v0.5.3 withholds.",
+        "fails_if": "A stated refusal is not refused, is refused for another reason, or the genomic form is refused.",
+        "outcome": "pass"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7819,
+      "sha256": "sha256:c9ac07d75d31dfe90d1bdefe5450284719ad6ea7afe17ca5eaf858e464e1e3d9"
+    },
+    {
+      "path": "exon_map_c_names_v0.5.3.tsv",
+      "bytes": 45561,
+      "sha256": "sha256:e58d4ded7387e684a106000b8bc6a16357c692e8f0623b507c8ab2e2e87fa410"
+    },
+    {
+      "path": "exon_map_exonic_v0.5.3.fa",
+      "bytes": 15569,
+      "sha256": "sha256:a8ba6de8abe868149d682c7ce385ccd45c8266b290f5ae95065e14dec88df13c"
+    },
+    {
+      "path": "exon_map_genomic_v0.5.3.fa",
+      "bytes": 153963,
+      "sha256": "sha256:92a30d5b0f0ca5cd954bed28c0ceb11e28d998dad37c35f0aebd7315e2cf90c8"
+    },
+    {
+      "path": "exon_map_header_v0.5.3.json",
+      "bytes": 248225,
+      "sha256": "sha256:36eeec7f25046fd7046df29b07607c048384935aaa2a7552ee855bf14f705ac4"
+    },
+    {
+      "path": "exon_map_highlights_v0.5.3.tsv",
+      "bytes": 2502,
+      "sha256": "sha256:81b5491ae24d721de699df5ad31d33174cade64280ff86d7091d347e77d32107"
+    },
+    {
+      "path": "exon_map_protein_v0.5.3.fa",
+      "bytes": 5189,
+      "sha256": "sha256:fb2fe200ab2c4708fda782bd02057cd64500a002e45fbf4a0723b71ab80b9880"
+    },
+    {
+      "path": "exon_map_v0.5.3.tsv",
+      "bytes": 7821,
+      "sha256": "sha256:dd51a4d4d26864b0881b655d74408ced1141b546f7ab5b812270bed7adc5ae77"
+    },
+    {
+      "path": "withheld.tsv",
+      "bytes": 2727,
+      "sha256": "sha256:71cceea8ab0a1b1ac412aee39507f7b08e937865230bed08e5a79d3f607e4be2"
+    }
+  ]
+}
